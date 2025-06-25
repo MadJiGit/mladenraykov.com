@@ -1,9 +1,9 @@
 # Site settings
 title: Mladen Raykov
-email: your-email@example.com
+email: hi@mladenraykov.com
 description: Personal portfolio website showcasing professional experience and projects
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://yourusername.github.io" # the base hostname & protocol for your site
+url: "https://mladenraykov.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
