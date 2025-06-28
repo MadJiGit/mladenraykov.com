@@ -68,10 +68,10 @@
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset();
         
-        // Hide success message after 5 seconds
+        // Hide success message after 3 seconds
         setTimeout(() => {
           thisForm.querySelector('.sent-message').classList.remove('d-block');
-        }, 5000);
+        }, 3000);
       } else {
         throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
       }
