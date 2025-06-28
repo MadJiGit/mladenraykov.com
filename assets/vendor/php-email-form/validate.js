@@ -85,6 +85,11 @@
     thisForm.querySelector('.loading').classList.remove('d-block');
     thisForm.querySelector('.error-message').innerHTML = error;
     thisForm.querySelector('.error-message').classList.add('d-block');
+    
+    // Hide error message after 5 seconds
+    setTimeout(() => {
+      thisForm.querySelector('.error-message').classList.remove('d-block');
+    }, 5000);
   }
 
 })();
