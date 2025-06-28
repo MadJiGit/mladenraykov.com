@@ -1,0 +1,132 @@
+{
+  "projects": [
+    {
+      "id": "blocklang-extension",
+      "title": "BlockLang Browser Extension",
+      "category": "Browser Extension",
+      "client": "Personal Project",
+      "date": "June 2025 ",
+      "url": "https://blocklang.org",
+      "description": "A powerful browser extension for Chrome, Firefox, and Safari that helps users filter unwanted content and remove distracting websites from search results.",
+      "longDescription": "BlockLang is a comprehensive browser extension designed to improve the browsing experience by filtering out unwanted content and distracting websites. The extension features advanced filtering capabilities, multi-language support, and cross-platform compatibility.",
+      "technologies": ["JavaScript", "Web Extensions API", "Safari Extensions", "Chrome Extensions", "Firefox Add-ons"],
+      "features": [
+        "Built using vanilla JavaScript for maximum compatibility across all browsers",
+        "Utilizes Web Extensions API for unified development across Chrome, Firefox, and Safari",
+        "Implements content filtering algorithms using DOM manipulation and CSS selectors",
+        "Uses browser storage APIs for saving user preferences and blocked domains",
+        "Employs manifest.json configuration for defining extension permissions and behavior",
+        "Integrates with browser tabs API to monitor and filter web content in real-time",
+        "Implements cross-platform compatibility through browser-specific manifest versions",
+        "Uses background scripts for persistent filtering and performance optimization"
+      ],
+      "descriptions": [
+        "Domain and website blocking",
+        "Cross-platform browser support (Chrome)",
+        "Cross-platform browser support (Firefox)",
+        "Cross-platform browser support (Safari macOS)",
+        "Cross-platform browser support (Safari iOS iPad)",
+        "Cross-platform browser support (Safari iOS iPhone over 5 incs)",
+        "Cross-platform browser support (Safari iOS iPhone 5 incs)"
+      ],
+      "images": [
+        "assets/img/portfolio/blocklang-ex/blocklang_main.png",
+        "assets/img/portfolio/blocklang-ex/blocklang-chrome-5.png",
+        "assets/img/portfolio/blocklang-ex/blocklang-firefox-3.png",
+        "assets/img/portfolio/blocklang-ex/blocklang-safari-mac-13.png",
+        "assets/img/portfolio/blocklang-ex/blocklang-safari-ios-1.png",
+        "assets/img/portfolio/blocklang-ex/blocklang-safari-ios-2.png",
+        "assets/img/portfolio/blocklang-ex/blocklang-safari-ios-3.png"
+      ],
+      "filter": "filter-extension"
+    },
+    {
+      "id": "body-language-org",
+      "title": "Body-Language.org Website",
+      "category": "Web Development",
+      "client": "Personal Project",
+      "date": "March 2025",
+      "url": "https://body-language.org",
+      "description": "A comprehensive website dedicated to body language education and analysis, featuring interactive content and educational resources.",
+      "longDescription": "Body-Language.org is an educational platform that provides comprehensive information about non-verbal communication, body language interpretation, and social interaction skills. The website features interactive elements, detailed guides, and practical examples.",
+      "technologies": ["PHP", "Symfony", "MySQL", "JavaScript", "Bootstrap", "HTML/CSS"],
+      "features": [
+        "Developed with PHP 7.4+ using object-oriented programming principles",
+        "MySQL database with normalized schema for efficient data storage and retrieval",
+        "Implements responsive design using Bootstrap 5 framework for mobile compatibility",
+        "Uses jQuery and vanilla JavaScript for dynamic user interface interactions",
+        "Employs PHP sessions and authentication system for secure user management",
+        "Integrates multilingual support through PHP internationalization functions",
+        "Implements CRUD operations with prepared statements for SQL injection prevention",
+        "Uses CSS3 animations and transitions for enhanced user experience",
+        "Employs MVC architecture pattern for clean code organization and maintainability"
+      ],
+      "descriptions": [
+        "Multi-column data tables for various data types",
+        "Multilingual database system",
+        "Multilingual UI system",
+        "Dynamic data display models",
+        "Simplified data display system for small datasets",
+        "Admin panel with user management capabilities",
+        "Role management system with admin privileges",
+        "Editor role for content management",
+        "Internal messaging system"
+      ],
+      "images": [
+        "assets/img/portfolio/body-language/body-language-1.png",
+        "assets/img/portfolio/body-language/body-language-2.png",
+        "assets/img/portfolio/body-language/body-language-3.png",
+        "assets/img/portfolio/body-language/body-language-4.png",
+        "assets/img/portfolio/body-language/body-language-5.png",
+        "assets/img/portfolio/body-language/body-language-6.png",
+        "assets/img/portfolio/body-language/body-language-7.png",
+        "assets/img/portfolio/body-language/body-language-8.png",
+        "assets/img/portfolio/body-language/body-language-9.png"
+      ],
+      "filter": "filter-web"
+    },
+    {
+      "id": "blocklang-website",
+      "title": "BlockLang.org Website",
+      "category": "Web Development",
+      "client": "Personal Project", 
+      "date": "June 2025",
+      "url": "https://blocklang.org",
+      "description": "The official website for BlockLang browser extension, featuring download links, documentation, and user support.",
+      "longDescription": "The BlockLang.org website serves as the central hub for the BlockLang browser extension. It provides users with download links, comprehensive documentation, installation guides, and customer support. The site features a modern design with clear navigation and detailed information about the extension's capabilities.",
+      "technologies": ["HTML/CSS", "JavaScript", "Bootstrap", "Form Integration"],
+      "features": [
+        "Built with semantic HTML5 and CSS3 for optimal SEO and accessibility",
+        "Implements responsive design using Bootstrap framework for cross-device compatibility",
+        "Uses vanilla JavaScript for interactive elements and smooth user experience",
+        "Integrates with external form processing service for reliable contact form functionality",
+        "Employs CSS Grid and Flexbox for modern layout design and positioning",
+        "Implements lazy loading for images to improve page load performance",
+        "Uses Font Awesome icons and Google Fonts for consistent visual design",
+        "Applies modern web standards and best practices for browser compatibility"
+      ],
+      "descriptions":  [
+        "Official website for BlockLang browser extension",
+        "Comprehensive installation guides",
+        "Privacy Policy and Terms of Use",
+        "Multi-platform download center",
+        "Links to App Stores",
+        "Interactive feature demonstrations",
+        "Contact form integration",
+        "Responsive design",
+        "Performance optimized"
+      ],
+      "images": [
+        "assets/img/portfolio/blocklang-site/blocklang-site-1.png",
+        "assets/img/portfolio/blocklang-site/blocklang-site-2.png",
+        "assets/img/portfolio/blocklang-site/blocklang-site-3.png",
+        "assets/img/portfolio/blocklang-site/blocklang-site-4.png",
+        "assets/img/portfolio/blocklang-site/blocklang-site-5.png",
+        "assets/img/portfolio/blocklang-site/blocklang-site-6.png",
+        "assets/img/portfolio/blocklang-site/blocklang-site-8.png",
+        "assets/img/portfolio/blocklang-site/blocklang-site-9.png"
+      ],
+      "filter": "filter-web"
+    }
+  ]
+}

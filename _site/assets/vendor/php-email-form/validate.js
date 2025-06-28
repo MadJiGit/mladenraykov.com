@@ -64,9 +64,14 @@
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
+      if (data.trim() == 'OK' || data.includes('Thanks!') || data.includes('submitted successfully')) {
         thisForm.querySelector('.sent-message').classList.add('d-block');
-        thisForm.reset(); 
+        thisForm.reset();
+        
+        // Hide success message after 3 seconds
+        setTimeout(() => {
+          thisForm.querySelector('.sent-message').classList.remove('d-block');
+        }, 3000);
       } else {
         throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
       }
@@ -80,6 +85,11 @@
     thisForm.querySelector('.loading').classList.remove('d-block');
     thisForm.querySelector('.error-message').innerHTML = error;
     thisForm.querySelector('.error-message').classList.add('d-block');
+    
+    // Hide error message after 5 seconds
+    setTimeout(() => {
+      thisForm.querySelector('.error-message').classList.remove('d-block');
+    }, 5000);
   }
 
 })();
