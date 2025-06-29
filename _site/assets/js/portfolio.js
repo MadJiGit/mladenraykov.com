@@ -62,16 +62,42 @@ function updateProjectContent(project) {
         
         portfolioImages.innerHTML = imagesHtml;
         
-        // Reinitialize Swiper if it exists
-        if (window.Swiper) {
-            // Wait a bit for images to load, then reinitialize
-            setTimeout(() => {
-                const swiperContainer = document.querySelector('.portfolio-details-slider');
-                if (swiperContainer && swiperContainer.swiper) {
-                    swiperContainer.swiper.update();
+        // Properly reinitialize Swiper after content change
+        setTimeout(() => {
+            const swiperContainer = document.querySelector('.portfolio-details-slider');
+            if (swiperContainer) {
+                // Destroy existing swiper instance if it exists
+                if (swiperContainer.swiper) {
+                    swiperContainer.swiper.destroy(true, true);
                 }
-            }, 100);
-        }
+                
+                // Swiper configuration defined in JavaScript
+                const config = {
+                    loop: true,
+                    speed: 600,
+                    autoplay: {
+                        delay: 5000
+                    },
+                    slidesPerView: "auto",
+                    pagination: {
+                        el: ".swiper-pagination",
+                        type: "bullets",
+                        clickable: true
+                    }
+                };
+                
+                // Count the actual number of slides
+                const slideCount = swiperContainer.querySelectorAll('.swiper-slide').length;
+                
+                // Disable loop if we have fewer than 3 slides to prevent warning
+                if (slideCount < 3) {
+                    config.loop = false;
+                }
+                
+                // Initialize new Swiper instance
+                new Swiper(swiperContainer, config);
+            }
+        }, 200);
     }
     
     // Update project info
@@ -132,7 +158,7 @@ function updateProjectContent(project) {
         
         projectDescription.innerHTML = `
             <h2>Project Overview</h2>
-            <p>${project.longDescription}</p>
+            <p>${project.projectOverview}</p>
             ${technologiesHtml}
             ${featuresHtml}
         `;
