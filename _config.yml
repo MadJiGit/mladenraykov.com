@@ -1,6 +1,6 @@
 # Site settings
 title: Mladen Raykov
-email: hi@mladenraykov.com
+email: hello@mladenraykov.com
 description: Personal portfolio website showcasing professional experience and projects
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mladenraykov.com" # the base hostname & protocol for your site
