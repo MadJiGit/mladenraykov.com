@@ -2808,3 +2808,42 @@ section,
 .additional-details li:last-child {
   margin-bottom: 0;
 }
+
+/* Detailed project sections */
+.detailed-sections {
+  border-top: 2px solid var(--accent-color);
+  padding-top: 2rem;
+}
+
+.detail-section {
+  background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--accent-color) 3%) 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-left: 4px solid var(--accent-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detail-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.detail-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  color: var(--heading-color);
+}
+
+.detail-section p {
+  margin-bottom: 0;
+  line-height: 1.7;
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+}
+
+.detail-section i {
+  font-size: 1.1rem;
+  color: var(--accent-color);
+}
+

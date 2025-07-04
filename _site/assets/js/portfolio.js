@@ -25,6 +25,19 @@ async function loadProject(projectId) {
         
         updateProjectContent(project);
         
+        // Handle hash/anchor navigation after content is loaded
+        setTimeout(() => {
+            if (window.location.hash) {
+                const targetElement = document.querySelector(window.location.hash);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+        }, 500);
+        
     } catch (error) {
         console.error('Error loading portfolio data:', error);
         window.location.href = 'index.html#portfolio';
@@ -120,10 +133,10 @@ function updateProjectContent(project) {
         let technologiesHtml = '';
         if (project.technologies && project.technologies.length > 0) {
             technologiesHtml = `
-                <div class="technologies mt-4">
+                <div class="technologies mt-4" id="technologies">
                     <h3>Technologies Used</h3>
                     <div class="technologies-list d-flex flex-wrap gap-2">
-                        ${project.technologies.map(tech => `<span class="badge bg-primary">${tech}</span>`).join('')}
+                        ${project.technologies.map(tech => `<span class="badge badge-tech">${tech}</span>`).join('')}
                     </div>
                 </div>
             `;
@@ -138,7 +151,7 @@ function updateProjectContent(project) {
             }
             
             featuresHtml = `
-                <div class="features mt-4">
+                <div class="features mt-4" id="features">
                     <h3>Key Features</h3>
                     <div class="row gy-3">
                         ${featureGroups.map((group, groupIndex) => 
@@ -156,9 +169,60 @@ function updateProjectContent(project) {
             `;
         }
         
+        // Create detailed sections if available
+        let detailedSectionsHtml = '';
+        if (project.motivations || project.problems || project.challenges || project['technical-details'] || project.results || project.feedback) {
+            detailedSectionsHtml = `
+                <div class="detailed-sections mt-5">
+                    ${project.motivations ? `
+                        <div class="detail-section mb-4" id="motivations">
+                            <h3><i class="bi bi-lightbulb me-2"></i>${project.motivations.title}</h3>
+                            <p>${project.motivations.description}</p>
+                        </div>
+                    ` : ''}
+                    
+                    ${project.problems ? `
+                        <div class="detail-section mb-4" id="problems">
+                            <h3><i class="bi bi-gear me-2"></i>${project.problems.title}</h3>
+                            <p>${project.problems.description}</p>
+                        </div>
+                    ` : ''}
+                    
+                    ${project.challenges ? `
+                        <div class="detail-section mb-4" id="challenges">
+                            <h3><i class="bi bi-exclamation-triangle me-2"></i>${project.challenges.title}</h3>
+                            <p>${project.challenges.description}</p>
+                        </div>
+                    ` : ''}
+                    
+                    ${project['technical-details'] ? `
+                        <div class="detail-section mb-4" id="technical-details">
+                            <h3><i class="bi bi-code-slash me-2"></i>${project['technical-details'].title}</h3>
+                            <p>${project['technical-details'].description}</p>
+                        </div>
+                    ` : ''}
+                    
+                    ${project.results ? `
+                        <div class="detail-section mb-4" id="results">
+                            <h3><i class="bi bi-trophy me-2"></i>${project.results.title}</h3>
+                            <p>${project.results.description}</p>
+                        </div>
+                    ` : ''}
+                    
+                    ${project.feedback ? `
+                        <div class="detail-section mb-4" id="feedback">
+                            <h3><i class="bi bi-chat-quote me-2"></i>${project.feedback.title}</h3>
+                            <p>${project.feedback.description}</p>
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+        }
+        
         projectDescription.innerHTML = `
             <h2>Project Overview</h2>
             <p>${project.projectOverview}</p>
+            ${detailedSectionsHtml}
             ${technologiesHtml}
             ${featuresHtml}
         `;
