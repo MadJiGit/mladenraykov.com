@@ -235,7 +235,7 @@
  * Toggle additional details in resume section
  */
 function toggleDetails(button) {
-  const detailsDiv = button.previousElementSibling;
+  const detailsDiv = button.nextElementSibling;
   const icon = button.querySelector("i");
   
   if (detailsDiv.style.display === "none") {
