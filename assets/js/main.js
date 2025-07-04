@@ -231,3 +231,20 @@
 
 
 })();
+/**
+ * Toggle additional details in resume section
+ */
+function toggleDetails(button) {
+  const detailsDiv = button.previousElementSibling;
+  const icon = button.querySelector("i");
+  
+  if (detailsDiv.style.display === "none") {
+    detailsDiv.style.display = "block";
+    button.innerHTML = `<i class="bi bi-dash-circle"></i> Hide Details`;
+    button.classList.add("expanded");
+  } else {
+    detailsDiv.style.display = "none";
+    button.innerHTML = `<i class="bi bi-plus-circle"></i> Main Responsibilities`;
+    button.classList.remove("expanded");
+  }
+}

@@ -8,8 +8,7 @@ url: "https://mladenraykov.com" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 highlighter: rouge
-plugins:
-  - jekyll-feed
+plugins: []
 
 # Exclude from processing
 exclude:
