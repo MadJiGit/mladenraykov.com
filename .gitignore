@@ -6,10 +6,8 @@ assets/scss
 **/.DS_Store
 
 PROGRESS.md
-forms
 portfolio-details-old.html
 _site/
-composer.json
 
 # Jekyll
 .jekyll-cache/
