@@ -194,14 +194,14 @@
       "filter": "filter-web-app"
     },
     {
-      "id": "colormatch",
-      "title": "ColorMatch - iOS Educational Game",
+      "id": "colorlab255",
+      "title": "Color Lab 255 - iOS Educational Game",
       "category": "Mobile App",
       "client": "Personal Project",
       "date": "December 2025",
-      "url": "https://mladenraykov.com/portfolio-details.html?project=colormatch",
+      "url": "https://mladenraykov.com/portfolio-details.html?project=colorlab255",
       "description": "An educational iOS game designed to help children learn RGB color composition through interactive gameplay.",
-      "projectOverview": "ColorMatch is an educational iOS game built with SwiftUI that teaches children RGB color theory through interactive gameplay. Kids adjust three sliders (Red, Green, Blue) to match a target color, learning how colors mix in real-time. The app features 5 difficulty levels, 15 customizable shapes, and is fully COPPA-compliant with zero data collection.",
+      "projectOverview": "Color Lab 255 is an educational iOS game built with SwiftUI that teaches children RGB color theory through interactive gameplay. Kids adjust three sliders (Red, Green, Blue) to match a target color, learning how colors mix in real-time. The app features 5 difficulty levels, 15 customizable shapes, and is fully COPPA-compliant with zero data collection.",
       "motivations": {"title": "Why I Even Started This", "description": "I wanted to make learning RGB color theory fun for kids. Traditional teaching methods are abstract and boring - I envisioned a game where children could see colors change in real-time as they adjusted sliders, making the learning hands-on and visual."},
       "problems": {"title": "What I Did and How I Grew It", "description": "I built the core color matching mechanic first - three RGB sliders and a target color. Then I added 5 difficulty levels and 15 different shapes to keep it interesting. To make it educational, I included optional RGB value displays and a How to Play tutorial. Finally, I added COPPA-compliant privacy screens since it's for children."},
       "challenges": {"title": "The Biggest Hurdles and How I Got Around Them", "description": "The trickiest part was getting vertical sliders to work properly - SwiftUI's rotation messed up the layout, which I fixed with a simple offset. I also had to handle modal presentation conflicts (privacy screen vs tutorial) by adding a small delay. Making it COPPA-compliant meant zero data collection and complete offline functionality."},
@@ -213,11 +213,11 @@
         "sections": [
           {
             "heading": "Introduction",
-            "content": "ColorMatch is an educational game designed for children to learn about RGB color composition. We take your privacy seriously, especially when it comes to children's data."
+            "content": "\"Color Lab 255\" is an educational game designed for children to learn about RGB color composition. We take your privacy seriously, especially when it comes to children's data."
           },
           {
             "heading": "Data Collection",
-            "content": "ColorMatch does NOT collect, store, or transmit any personal information. The app:\n• Does not require registration or account creation\n• Does not collect names, email addresses, or any personal data\n• Does not use analytics or tracking services\n• Does not contain advertisements\n• Does not share any information with third parties"
+            "content": "\"Color Lab 255\" does NOT collect, store, or transmit any personal information. The app:\n• Does not require registration or account creation\n• Does not collect names, email addresses, or any personal data\n• Does not use analytics or tracking services\n• Does not contain advertisements\n• Does not share any information with third parties"
           },
           {
             "heading": "Local Storage",
@@ -225,11 +225,11 @@
           },
           {
             "heading": "Children's Privacy (COPPA Compliance)",
-            "content": "ColorMatch is designed for children and complies with the Children's Online Privacy Protection Act (COPPA). We do not knowingly collect any personal information from children under 13.\n\nThe app is completely offline and does not require internet connection to function."
+            "content": "\"Color Lab 255\" is designed for children and complies with the Children's Online Privacy Protection Act (COPPA). We do not knowingly collect any personal information from children under 13.\n\nThe app is completely offline and does not require internet connection to function."
           },
           {
             "heading": "Third-Party Services",
-            "content": "ColorMatch does not integrate with any third-party services, SDKs, or frameworks that collect data."
+            "content": "\"Color Lab 255\" does not integrate with any third-party services, SDKs, or frameworks that collect data."
           },
           {
             "heading": "Contact",
@@ -251,7 +251,7 @@
         "Settings Persistence - User preferences saved locally using UserDefaults"
       ],
       "descriptions": [
-        "ColorMatch app logo and icon design",
+        "Color Lab 255 app logo and icon design",
         "Main gameplay screen with RGB sliders and color matching",
         "Settings and customization options",
         "Shape selection and difficulty settings",
