@@ -215,6 +215,18 @@ function updateProjectContent(project) {
                             <p>${project.feedback.description}</p>
                         </div>
                     ` : ''}
+
+                    ${project.privacyPolicy ? `
+                        <div class="detail-section mb-4" id="privacy-policy">
+                            <h3><i class="bi bi-shield-check me-2"></i>${project.privacyPolicy.title}</h3>
+                            ${project.privacyPolicy.sections.map(section => `
+                                <div class="privacy-section mb-3">
+                                    <h4>${section.heading}</h4>
+                                    <p style="white-space: pre-line;">${section.content}</p>
+                                </div>
+                            `).join('')}
+                        </div>
+                    ` : ''}
                 </div>
             `;
         }
