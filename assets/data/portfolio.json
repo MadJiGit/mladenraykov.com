@@ -265,6 +265,42 @@
         "assets/img/portfolio/colormatch/colormatch-4.png"
       ],
       "filter": "filter-mobile"
+    },
+    {
+      "id": "barbershop",
+      "title": "Barber Shop Booking System",
+      "category": "Full Stack",
+      "client": "Available for Clients",
+      "date": "January 2026",
+      "url": "https://barber-shop-wj5g.onrender.com",
+      "description": "A comprehensive full-stack appointment booking and management system built for barbershops, featuring guest bookings, multilingual support, and advanced role-based access control.",
+      "projectOverview": "Barber Shop is a production-ready SaaS application built with PHP 8.2 and Symfony 7.3 framework, designed to streamline barbershop operations from client bookings to schedule management. The system implements a sophisticated two-step guest booking workflow with email confirmation, allowing non-registered users to book appointments while maintaining security. Architecturally, it leverages PostgreSQL 16 for data persistence, Doctrine ORM for database abstraction, and implements robust authentication with 8 distinct user roles (Client, Barber Junior/Senior, Manager, Receptionist, Admin, Super Admin). The platform features multilingual support (Bulgarian/English) with Symfony translation components, automated email notifications via Brevo SMTP, and timezone-aware scheduling using Europe/Sofia timezone. Additional technical implementations include EasyAdmin 4 for backend management, Webpack Encore for frontend asset compilation, real-time availability checking with AJAX, and Docker containerization for deployment on Render.com. The system demonstrates enterprise-level full-stack development with comprehensive testing (41 PHPUnit tests), security best practices (CSRF protection, password hashing), and scalable architecture ready for multi-location deployment.",
+      "motivations": {
+        "title": "Project Purpose",
+        "description": "Built as a comprehensive full-stack SaaS solution to address real business needs in the barbershop industry. The system is production-ready and currently available for deployment to barbershop clients who need a modern, reliable booking management platform."
+      },
+      "technologies": ["PHP", "Symfony", "PostgreSQL", "Docker", "JavaScript", "Bootstrap", "Twig", "Webpack", "HTML/CSS"],
+      "features": [
+        "Two-Step Guest Booking System with Email Confirmation",
+        "Multilingual Platform (Bulgarian/English)",
+        "Advanced Role-Based Access Control (8 roles)",
+        "Real-Time Barber Availability Checking",
+        "Automated Email Notifications (Brevo SMTP)",
+        "Timezone-Aware Scheduling System",
+        "Barber Calendar Management with Exceptions",
+        "Docker Deployment on Render.com"
+      ],
+      "descriptions": [
+        "Guest booking workflow",
+        "Barber calendar management",
+        "Admin dashboard"
+      ],
+      "images": [
+        "assets/img/portfolio/barbershop/barbershop-1.png",
+        "assets/img/portfolio/barbershop/barbershop-2.png",
+        "assets/img/portfolio/barbershop/barbershop-3.png"
+      ],
+      "filter": "filter-web-app"
     }
   ]
 }
