@@ -199,7 +199,7 @@
       "category": "Mobile App",
       "client": "Personal Project",
       "date": "December 2025",
-      "url": "https://mladenraykov.com/portfolio-details.html?project=colorlab255",
+      "url": "https://apps.apple.com/bg/app/color-lab-255/id6757189833",
       "description": "An educational iOS game designed to help children learn RGB color composition through interactive gameplay.",
       "projectOverview": "Color Lab 255 is an educational iOS game built with SwiftUI that teaches children RGB color theory through interactive gameplay. Kids adjust three sliders (Red, Green, Blue) to match a target color, learning how colors mix in real-time. The app features 5 difficulty levels, 15 customizable shapes, and is fully COPPA-compliant with zero data collection.",
       "motivations": {"title": "Why I Even Started This", "description": "I wanted to make learning RGB color theory fun for kids. Traditional teaching methods are abstract and boring - I envisioned a game where children could see colors change in real-time as they adjusted sliders, making the learning hands-on and visual."},
