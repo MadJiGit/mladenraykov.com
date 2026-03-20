@@ -272,7 +272,7 @@
       "category": "Full Stack",
       "client": "Available for Clients",
       "date": "January 2026",
-      "url": "https://barber-shop-wj5g.onrender.com",
+      "url": "https://barber-shop.store",
       "description": "A comprehensive full-stack appointment booking and management system built for barbershops, featuring guest bookings, multilingual support, and advanced role-based access control.",
       "projectOverview": "Barber Shop is a production-ready SaaS application built with PHP 8.2 and Symfony 7.3 framework, designed to streamline barbershop operations from client bookings to schedule management. The system implements a sophisticated two-step guest booking workflow with email confirmation, allowing non-registered users to book appointments while maintaining security. Architecturally, it leverages PostgreSQL 16 for data persistence, Doctrine ORM for database abstraction, and implements robust authentication with 8 distinct user roles (Client, Barber Junior/Senior, Manager, Receptionist, Admin, Super Admin). The platform features multilingual support (Bulgarian/English) with Symfony translation components, automated email notifications via Brevo SMTP, and timezone-aware scheduling using Europe/Sofia timezone. Additional technical implementations include EasyAdmin 4 for backend management, Webpack Encore for frontend asset compilation, real-time availability checking with AJAX, and Docker containerization for deployment on Render.com. The system demonstrates enterprise-level full-stack development with comprehensive testing (41 PHPUnit tests), security best practices (CSRF protection, password hashing), and scalable architecture ready for multi-location deployment.",
       "motivations": {
