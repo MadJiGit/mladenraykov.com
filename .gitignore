@@ -13,7 +13,7 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 .bundle/
-vendor/
+/vendor/
 Gemfile.lock
 
 # Node.js
