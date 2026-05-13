@@ -191,7 +191,7 @@
         "assets/img/portfolio/blocklang-scam/blocklang-scam-5.png",
         "assets/img/portfolio/blocklang-scam/blocklang-scam-6.png"
       ],
-      "filter": "filter-web-app"
+      "filter": "filter-web"
     },
     {
       "id": "colorlab255",
@@ -312,7 +312,7 @@
         "assets/img/portfolio/barbershop/barbershop-14.png",
         "assets/img/portfolio/barbershop/barbershop-15.png"
       ],
-      "filter": "filter-web-app"
+      "filter": "filter-web"
     },
     {
       "id": "etajabg",
@@ -352,7 +352,7 @@
         "assets/img/portfolio/etajabg/domo_charges.webp",
         "assets/img/portfolio/etajabg/domo_reports.webp"
       ],
-      "filter": "filter-web-app"
+      "filter": "filter-web"
     }
   ]
 }
