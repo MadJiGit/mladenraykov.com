@@ -313,6 +313,46 @@
         "assets/img/portfolio/barbershop/barbershop-15.png"
       ],
       "filter": "filter-web-app"
+    },
+    {
+      "id": "etajabg",
+      "title": "Building Management Portal",
+      "category": "Full Stack",
+      "client": "etaja.bg",
+      "date": "May 2026",
+      "url": "https://etaja.bg",
+      "description": "A full-stack SaaS platform for managing residential buildings in Bulgaria — covering monthly fee collection, maintenance requests, resident communication, and financial reporting for building managers.",
+      "projectOverview": "Etaja.bg is a production-ready building management platform built for the Bulgarian market, addressing the everyday operational challenges of managing apartment buildings. The platform enables building managers to digitize their workflow: collecting monthly maintenance fees, tracking expenses, managing resident profiles, logging maintenance requests, and generating financial reports. Built with a modern full-stack architecture, the system features role-based access for managers, residents, and administrators. Residents can view their fee history, submit requests, and receive notifications, while managers get a comprehensive dashboard with overdue payment tracking and building-wide financial overview. The platform handles the specific requirements of Bulgarian property law and building co-ownership regulations.",
+      "motivations": {
+        "title": "Project Purpose",
+        "description": "Etaja.bg was built to modernize the management of residential buildings in Bulgaria, replacing paper-based processes and manual fee collection with a clean, accessible digital platform that works for both building managers and residents."
+      },
+      "technologies": ["PHP", "Symfony", "MySQL", "JavaScript", "Bootstrap", "Twig", "Webpack", "HTML/CSS"],
+      "features": [
+        "Monthly Fee Management and Payment Tracking",
+        "Resident Portal with Fee History",
+        "Maintenance Request Logging and Status Tracking",
+        "Building Financial Reports and Expense Overview",
+        "Overdue Payment Notifications",
+        "Role-Based Access (Manager, Resident, Admin)",
+        "Multi-Building Support",
+        "Document and Protocol Management"
+      ],
+      "descriptions": [
+        "Landing page",
+        "Manager dashboard overview",
+        "Resident fee history",
+        "Maintenance request tracking",
+        "Financial reports"
+      ],
+      "images": [
+        "assets/img/portfolio/etajabg/landing.webp",
+        "assets/img/portfolio/etajabg/domo_dashboard.webp",
+        "assets/img/portfolio/etajabg/domo_residents.webp",
+        "assets/img/portfolio/etajabg/domo_charges.webp",
+        "assets/img/portfolio/etajabg/domo_reports.webp"
+      ],
+      "filter": "filter-web-app"
     }
   ]
 }
